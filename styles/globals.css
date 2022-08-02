@@ -6,6 +6,17 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+@font-face {
+  font-family: BoschSansRegular;
+  src: local(BoschSansRegular),
+    url('../public/fonts/BoschSans-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: BoschSansBold;
+  src: local(BoschSansBold),
+    url('../public/fonts/BoschSans-Bold.ttf') format('truetype');
+}
+
 a {
   color: inherit;
   text-decoration: none;

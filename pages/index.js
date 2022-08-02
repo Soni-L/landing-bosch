@@ -1,5 +1,6 @@
 import Head from 'next/head'
-import Image from 'next/image'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import styles from '../styles/Home.module.css'
 
 
@@ -12,7 +13,39 @@ export default function Home() {
           content="auto, vervangen, accu, airco, beurt, banden, leeg, versnellingsbak, apk, branden, grote, kapot, kleine, motorblok, garage, geluid, niet, start, autolampjes, band, condensor, controleren, dashboard, kapotte, keuring, lampjes, lege, loopt, motor, nakijken, onderhoud, piepen, problemen, remmen, repareren, snel, uitlijnen, wisselen, autobedrijf, autogarage, motorproblemen" />
         <title>Auto</title>
       </Head>
-      <div  className={styles.boschHeader} style={{backgroundImage: 'url(BoschHorizontalBorder.svg)'}}/>
+      {/* Bosch Horizontal rainbow header */}
+      <div className={styles.boschHeader} style={{ backgroundImage: 'url(BoschHorizontalBorder.svg)' }} />
+
+      {/* value advertisement header */}
+      <div style={{
+        width: '70%',
+        margin: '15px auto',
+        display: 'flex',
+        justifyContent: 'space-around',
+        alignItems: 'center'
+      }}>
+        <div style={{ display: 'flex', alignItems: 'center' }}>
+          <FontAwesomeIcon icon={faCheck} className={styles.check} />
+          <span style={{ fontFamily: 'BoschSansRegular', fontSize: '14px' }}>Geen onverwachte kosten</span>
+        </div>
+
+        <div style={{ display: 'flex', alignItems: 'center' }}>
+          <FontAwesomeIcon icon={faCheck} className={styles.check} />
+          <span style={{ fontFamily: 'BoschSansRegular', fontSize: '14px' }}>BOVAG-gecertificeerd</span>
+        </div>
+
+        <div style={{ display: 'flex', alignItems: 'center' }}>
+          <FontAwesomeIcon icon={faCheck} className={styles.check} />
+          <span style={{ fontFamily: 'BoschSansRegular', fontSize: '14px' }}>Gegarandeerde kwaliteit van Bosch</span>
+        </div>
+
+        <div style={{ display: 'flex', alignItems: 'center' }}>
+          <FontAwesomeIcon icon={faCheck} className={styles.check} />
+          <span style={{ fontFamily: 'BoschSansRegular', fontSize: '14px' }}>
+            Met behoud van fabrieksgarantie</span>
+        </div>
+      </div>
+
     </div>
   )
 }

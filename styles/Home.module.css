@@ -11,3 +11,17 @@
   background-repeat: no-repeat;
   background-position: center center;
 }
+
+.check {
+  width: 13px;
+  height: 24px;
+  margin: 0 8px 0 0;
+  font-family: FontAwesome6Pro;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  color: #005792;
+}
