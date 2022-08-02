@@ -4,6 +4,7 @@ import Footer from '../components/Footer';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import styles from '../styles/Home.module.css'
+import MainSection from '../components/MainSection';
 
 
 export default function Home() {
@@ -50,6 +51,9 @@ export default function Home() {
 
       {/* Page navigation header */}
       <PageNavigation />
+
+      {/* Main section */}
+      <MainSection/>
 
       <Footer />
     </div>
