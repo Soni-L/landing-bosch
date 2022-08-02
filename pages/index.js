@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import PageNavigation from '../components/PageNavigation';
 import Footer from '../components/Footer';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
@@ -47,7 +48,10 @@ export default function Home() {
         </div>
       </div>
 
-      <Footer/>
+      {/* Page navigation header */}
+      <PageNavigation />
+
+      <Footer />
     </div>
   )
 }
