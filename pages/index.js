@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Footer from '../components/Footer';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import styles from '../styles/Home.module.css'
@@ -46,6 +47,7 @@ export default function Home() {
         </div>
       </div>
 
+      <Footer/>
     </div>
   )
 }

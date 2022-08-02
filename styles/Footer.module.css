@@ -1,0 +1,33 @@
+.container {
+    height: 69px;
+    width: 100%;
+    background-color: #004473;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 15% 0 15%;
+}
+
+.copyright {
+    font-family: BoschSansBold;
+    font-size: 12px;
+    margin: 0 10px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #fff;
+}
+
+.link {
+    font-family: BoschSansRegular;
+    font-size: 12px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #fff;
+    margin: 0 10px;
+}
