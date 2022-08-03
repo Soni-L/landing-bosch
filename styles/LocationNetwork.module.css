@@ -1,3 +1,55 @@
 .container {
-    
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+.mapSection {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 50px;
+}
+
+.header {
+    font-family: BoschSansBold;
+    font-size: 42px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    color: #005792;
+}
+
+.header2 {
+    font-family: BoschSansBold;
+    font-size: 28px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    color: #005792;
+}
+
+.text {
+    font-family: BoschSansRegular;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #2e3033;
+}
+
+.link {
+    font-family: BoschSansRegular;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #ed0006;
 }
