@@ -6,6 +6,7 @@ import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import styles from '../styles/Home.module.css'
 import MainSection from '../components/MainSection';
 import BookingAndSteps from '../components/BookingAndSteps';
+import LocationNetwork from '../components/LocationNetwork';
 
 
 export default function Home() {
@@ -56,8 +57,11 @@ export default function Home() {
       {/* Main section */}
       <MainSection/>
 
-      {/* Booking and steps */}
+      {/* Booking, steps and FAQ */}
       <BookingAndSteps/>
+
+      {/* Locations Network*/}
+      <LocationNetwork/>
 
       <Footer />
     </div>
