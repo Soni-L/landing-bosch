@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import styles from '../styles/Home.module.css'
 import MainSection from '../components/MainSection';
+import BookingAndSteps from '../components/BookingAndSteps';
 
 
 export default function Home() {
@@ -54,6 +55,9 @@ export default function Home() {
 
       {/* Main section */}
       <MainSection/>
+
+      {/* Booking and steps */}
+      <BookingAndSteps/>
 
       <Footer />
     </div>
