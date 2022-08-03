@@ -61,6 +61,7 @@ export default function BookingAndSteps() {
       </div>
       <p className={styles.header2}>... en je kan weer veilig en vertrouwd op weg</p>
 
+      <button className={styles.button}><span className={styles.buttonText}>Plan direct je afspraak</span></button>
     </div>
   )
 }

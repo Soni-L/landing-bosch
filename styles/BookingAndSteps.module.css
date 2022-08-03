@@ -67,3 +67,24 @@
     text-decoration: underline;
     color: #ed0006;
 }
+
+.button {
+    width: 238px;
+    height: 56px;
+    border: hwb(358 0% 7%);
+    display: block;
+    margin: 32px auto;
+    background-color: #ed0006;
+}
+
+.buttonText {
+    font-family: BoschSansBold;
+    font-size: 16px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+}
