@@ -62,6 +62,25 @@ export default function BookingAndSteps() {
       <p className={styles.header2}>... en je kan weer veilig en vertrouwd op weg</p>
 
       <button className={styles.button}><span className={styles.buttonText}>Plan direct je afspraak</span></button>
+
+
+      {/* FAQ Section */}
+      <p className={styles.header} style={{marginTop: '100px'}}>Veelgestelde vragen</p>
+
+      <p className={styles.textBold}>Geven jullie aangesloten garages voor de keuring een prijsindicatie?</p>
+      <p className={styles.text}>Uw Auto by Bosch autogarage stemt voor een APK of reparaties altijd vooraf met u af wat de kosten zijn. Wanneer deze kosten toch hoger uitvallen dan gedacht, stellen wij u altijd op tijd op de hoogte. We kunnen niet per direct een prijsindicatie geven voor algemeen onderhoud.</p>
+      <div style={{borderBottom: '1px solid #EFF1F2', width: '100%', paddingTop: '15px'}}></div>
+
+      <p className={styles.textBold}>Zijn garages aangesloten bij Auto by Bosch BOVAG-gecertificeerd?</p>
+      <p className={styles.text}>Ja, onze aangesloten garages staan voor echte kwaliteit en zijn BOVAG-gecertificeerd. De garages bezitten dus een algemeen geaccepteerd kwaliteitskeurmerk. Ons netwerk van aangesloten garages ontvangt professionele ondersteuning van BOVAG.</p>
+      <div style={{borderBottom: '1px solid #EFF1F2', width: '100%', paddingTop: '15px'}}></div>
+
+      <p className={styles.textBold}>Waarom is regelmatig onderhoud belangrijk?</p>
+      <p className={styles.text}>Als u het volste vertrouwen wilt hebben in de veiligheid en de betrouwbaarheid van uw voertuig. laat dan regelmatig een algemeen onderhoud uitvoeren. Praktisch betekent dit één keer per jaar. Wanneer u uw auto intensief gebruikt en veel kilometers maakt, wordt het interval korter.</p>
+      <div style={{borderBottom: '1px solid #EFF1F2', width: '100%', paddingTop: '15px'}}></div>
+
+      <p className={styles.textBold}>Wat wordt gecontroleerd bij een APK?</p>
+      <p className={styles.text}>Tijdens een APK controleert een keurmeester van Auto by Bosch uw auto nauwkeurig op essentiële onderdelen. Deze onderdelen hebben directe invloed op de veiligheid van uw voertuig en op de verkeersveiligheid. Alles wordt gecontroleerd: banden, remmen, wielophanging, schokdempers, stuurinrichting, verlichting, carrosserie en de veiligheidsgordels. Daarnaast wordt met diagnoseapparatuur een uitlaatgastest uitgevoerd om te meten of uw auto wel voldoet aan de wettelijke emissie-eisen. Verder controleert hij uw auto op eventuele vloeistoflekkage en checkt hij of de registratie van het voertuig in orde is. </p>
     </div>
   )
 }
