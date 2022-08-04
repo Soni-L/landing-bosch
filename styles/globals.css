@@ -17,6 +17,10 @@ body {
     url('../public/fonts/BoschSans-Bold.ttf') format('truetype');
 }
 
+:root {
+  --maximum-content-width: 1200px;
+}
+
 a {
   color: inherit;
   text-decoration: none;

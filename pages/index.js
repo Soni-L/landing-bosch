@@ -24,7 +24,7 @@ export default function Home() {
 
       {/* value advertisement header */}
       <div style={{
-        width: '70%',
+        maxWidth: 'var(--maximum-content-width)',
         margin: '15px auto',
         display: 'flex',
         justifyContent: 'space-around',
