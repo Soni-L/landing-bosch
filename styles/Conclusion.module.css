@@ -1,0 +1,58 @@
+.backgroundContainer {
+    background-color: #005792;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 64px 0;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.header {
+    font-family: BoschSansBold;
+    font-size: 42px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    color: #fff;
+}
+
+.button {
+    min-width: 238px;
+    height: 56px;
+    margin-top: 32px;
+    border: hwb(358 0% 7%);
+    display: block;
+    background-color: #ed0006;
+}
+
+.buttonText {
+    font-family: BoschSansBold;
+    font-size: 16px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+}
+
+.check {
+    width: 13px;
+    height: 24px;
+    margin: 0 8px 0 0;
+    font-family: FontAwesome6Pro;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    color: #fff;
+  }

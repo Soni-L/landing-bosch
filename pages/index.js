@@ -7,6 +7,7 @@ import styles from '../styles/Home.module.css'
 import MainSection from '../components/MainSection';
 import BookingAndSteps from '../components/BookingAndSteps';
 import LocationNetwork from '../components/LocationNetwork';
+import Conclusion from '../components/Conclusion';
 
 
 export default function Home() {
@@ -62,6 +63,9 @@ export default function Home() {
 
       {/* Locations Network*/}
       <LocationNetwork/>
+
+      {/* Conclusion Section*/}
+      <Conclusion/>
 
       <Footer />
     </div>
