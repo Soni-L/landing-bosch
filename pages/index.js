@@ -23,31 +23,25 @@ export default function Home() {
       <div className={styles.boschHeader} style={{ backgroundImage: 'url(BoschHorizontalBorder.svg)' }} />
 
       {/* value advertisement header */}
-      <div style={{
-        maxWidth: 'var(--maximum-content-width)',
-        margin: '15px auto',
-        display: 'flex',
-        justifyContent: 'space-around',
-        alignItems: 'center'
-      }}>
+      <div className={styles.valueContainer}>
         <div style={{ display: 'flex', alignItems: 'center' }}>
           <FontAwesomeIcon icon={faCheck} className={styles.check} />
-          <span style={{ fontFamily: 'BoschSansRegular', fontSize: '14px' }}>Geen onverwachte kosten</span>
+          <span style={{ fontFamily: 'BoschSansRegular', fontSize: '14px', color: '#2e3033' }}>Geen onverwachte kosten</span>
         </div>
 
         <div style={{ display: 'flex', alignItems: 'center' }}>
           <FontAwesomeIcon icon={faCheck} className={styles.check} />
-          <span style={{ fontFamily: 'BoschSansRegular', fontSize: '14px' }}>BOVAG-gecertificeerd</span>
+          <span style={{ fontFamily: 'BoschSansRegular', fontSize: '14px', color: '#2e3033' }}>BOVAG-gecertificeerd</span>
         </div>
 
         <div style={{ display: 'flex', alignItems: 'center' }}>
           <FontAwesomeIcon icon={faCheck} className={styles.check} />
-          <span style={{ fontFamily: 'BoschSansRegular', fontSize: '14px' }}>Gegarandeerde kwaliteit van Bosch</span>
+          <span style={{ fontFamily: 'BoschSansRegular', fontSize: '14px', color: '#2e3033' }}>Gegarandeerde kwaliteit van Bosch</span>
         </div>
 
         <div style={{ display: 'flex', alignItems: 'center' }}>
           <FontAwesomeIcon icon={faCheck} className={styles.check} />
-          <span style={{ fontFamily: 'BoschSansRegular', fontSize: '14px' }}>
+          <span style={{ fontFamily: 'BoschSansRegular', fontSize: '14px', color: '#2e3033' }}>
             Met behoud van fabrieksgarantie</span>
         </div>
       </div>
@@ -56,16 +50,16 @@ export default function Home() {
       <PageNavigation />
 
       {/* Main section */}
-      <MainSection/>
+      <MainSection />
 
       {/* Booking, steps and FAQ */}
-      <BookingAndSteps/>
+      <BookingAndSteps />
 
       {/* Locations Network*/}
-      <LocationNetwork/>
+      <LocationNetwork />
 
       {/* Conclusion Section*/}
-      <Conclusion/>
+      <Conclusion />
 
       <Footer />
     </div>
