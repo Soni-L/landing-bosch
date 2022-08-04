@@ -20,8 +20,7 @@ jobs:
         run: yarn install
 
       - name: Build App
-        run: CI=false yarn build
-        run: CI=false yarn export
+        run: CI=false yarn build && yarn export
 
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v1.2
