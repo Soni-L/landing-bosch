@@ -36,7 +36,6 @@
 
 @media screen and (max-width: 1200px) {
   .valueContainer {
-    background-color: pink;
     display: none !important;
   }
 }

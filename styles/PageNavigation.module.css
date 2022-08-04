@@ -5,6 +5,7 @@
     justify-content: space-around;
     align-items: center;
     margin: 40px auto;
+    padding: 0 20px;
 }
 
 .link {
@@ -13,8 +14,24 @@
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.5;
+    padding: 0 15px;
     letter-spacing: normal;
     color: #2e3033;
-    margin: 0 10px;
+
+    
 }
+
+.link:hover {
+    text-decoration: underline;
+  }
+
+@media screen and (max-width: 950px) {
+    .container {
+        padding: 0 35px;
+        margin: 30px auto;
+    }
+
+    .link {
+        display: none !important;
+    }
+  }

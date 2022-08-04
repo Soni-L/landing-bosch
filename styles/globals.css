@@ -19,6 +19,8 @@ body {
 
 :root {
   --maximum-content-width: 1200px;
+  --header-font-size-desktop : 51px;
+  --header-font-size-mobile : 32px;
 }
 
 a {

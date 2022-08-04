@@ -4,18 +4,17 @@ import Link from 'next/link'
 export default function PageNavigation() {
     return (
         <div className={styles.container}>
-            <div className={styles.copyright}
-                style={{ flex: 1 }} >
-                <div style={{
+            <div
+                style={{
+                    flex: 1,
                     margin: 0,
                     padding: 0,
-                    height: '50px', 
-                    width: '100px', 
+                    height: '45px',
+                    width: '100px',
                     backgroundImage: 'url(Auto_Bosch_Logo_colored.svg)',
                     backgroundRepeat: 'no-repeat',
                     backgroundSize: 'contain',
-                    }} />
-                {/* <img  src='Auto_Bosch_Logo_colored.svg'></img> */}
+                }} >
             </div>
 
             <Link href='#'><a className={styles.link}>Waar je op kunt rekenen</a></Link>
