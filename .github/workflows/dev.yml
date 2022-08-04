@@ -1,0 +1,35 @@
+name: Build and Deploy to Netlify
+on:
+  push:
+    branches:
+      - development
+jobs:
+  deploy-dev:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Use Node.js 16.x
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16.x
+
+      - name: Install PKGs
+        run: yarn install
+
+      - name: Build App
+        run: CI=false yarn build
+
+      - name: Deploy to Netlify
+        uses: nwtgck/actions-netlify@v1.2
+        with:
+          publish-dir: './build'
+          deploy-message: "Deploy from GitHub Actions"
+          netlify-config-path: ./netlify.toml
+          production-deploy: true
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID_DEV }}
+        timeout-minutes: 10
