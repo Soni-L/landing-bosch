@@ -2,7 +2,7 @@ name: Build and Deploy to Netlify
 on:
   push:
     branches:
-      - development
+      - master
 jobs:
   deploy-dev:
     runs-on: ubuntu-latest
