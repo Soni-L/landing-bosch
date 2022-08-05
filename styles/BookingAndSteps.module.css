@@ -10,6 +10,10 @@
     margin-bottom: 50px;
 }
 
+.image {
+    height: 538px;
+}
+
 .header {
     font-family: BoschSansBold;
     font-size: 42px;
@@ -97,4 +101,27 @@
     letter-spacing: normal;
     text-align: center;
     color: #fff;
+}
+
+@media screen and (max-width: 1270px) {
+    .container {
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .image {
+        height: 400px;
+    }
+
+    .certificationContainer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .image {
+        height: 300px;
+    }
 }

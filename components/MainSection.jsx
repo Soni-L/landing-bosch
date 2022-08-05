@@ -8,10 +8,9 @@ export default function MainSection() {
             <p className={styles.subHeader}>Voor uw eigen veiligheid en het welzijn van het milieu is het belangrijk om uw auto periodiek te laten controleren. Tijdens deze keuring controleert een professionele monteur uw auto zorgvuldig. Zo is uw auto weer klaar om de weg op te gaan.</p>
             <button className={styles.button}><span className={styles.buttonText}>Plan direct je afspraak</span></button>
 
-            <div style={{
+            <div className={styles.image}
+             style={{
                 position: 'relative',
-                height: '300px',
-                width: '700px',
                 margin: '0 auto',
                 backgroundSize: 'contain',
                 backgroundRepeat: 'no-repeat',
@@ -25,7 +24,7 @@ export default function MainSection() {
             <div style={{
                 display: 'grid',
                 gap: '1rem',
-                gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(285px, 1fr))',
             }}>
 
                 <div style={{ display: 'flex', alignItems: 'center' }}>

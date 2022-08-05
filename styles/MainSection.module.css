@@ -18,6 +18,11 @@
     color: #005792;
 }
 
+.image {
+    height: 300px;
+    width: 750px;
+}
+
 .subHeader {
     font-family: BoschSansRegular;
     font-size: 21px;
@@ -60,4 +65,18 @@
     letter-spacing: normal;
     text-align: center;
     color: #fff;
+}
+
+@media screen and (max-width: 900px) {
+    .image {
+        height: 200px;
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .image {
+        height: 100px;
+        width: 250px;
+    }
 }
