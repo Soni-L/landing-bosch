@@ -14,7 +14,7 @@
 
 .copyright {
     font-family: BoschSansBold;
-    font-size: 12px;
+    font-size: var(--secondary-text-font-size-desktop);
     font-weight: 900;
     font-stretch: normal;
     font-style: normal;
@@ -25,7 +25,7 @@
 
 .link {
     font-family: BoschSansRegular;
-    font-size: 12px;
+    font-size: var(--secondary-text-font-size-desktop);
     font-weight: 900;
     font-stretch: normal;
     font-style: normal;
@@ -49,12 +49,14 @@
         justify-content: center;
     }
 
-    .copyright{
+    .copyright {
         text-align: center;
         margin: 15px;
+        font-size: var(--secondary-text-font-size-mobile);
     }
 
     .link {
         margin: 10px;
+        font-size: var(--secondary-text-font-size-mobile);
     }
 }

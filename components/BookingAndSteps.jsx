@@ -26,15 +26,15 @@ export default function BookingAndSteps() {
 
       <p className={styles.header}>Van afspraak tot veilig op weg</p>
       <div style={{ display: 'flex', alignItems: 'start' }}>
-        <img src='icons/circle_check.svg' />
+        <img className={styles.circleCheck} src='icons/circle_check.svg' />
         <div style={{ padding: '10px' }}>
           <p className={styles.subHeader}>1. Kies het type onderhoud</p>
-          <p className={styles.text}>EHoe kunnen wij jou helpen? Kies een dienst die het beste bij jouw behoeften past. Is uw voertuig toe aan een APK? Of maakt u liever een afspraak voor algemeen onderhoud?</p>
+          <p className={styles.text}>Hoe kunnen wij jou helpen? Kies een dienst die het beste bij jouw behoeften past. Is uw voertuig toe aan een APK? Of maakt u liever een afspraak voor algemeen onderhoud?</p>
         </div>
       </div>
 
       <div style={{ display: 'flex', alignItems: 'start' }}>
-        <img src='icons/circle_check.svg' />
+        <img className={styles.circleCheck} src='icons/circle_check.svg' />
         <div style={{ padding: '10px' }}>
           <p className={styles.subHeader}>2. Geef details van je auto op</p>
           <p className={styles.text}>Voor welk voertuig wilt u bij ons langskomen? Vertel ons meer over uw auto door uw kenteken in te voeren op onze website. Met deze informatie kunnen we u verder helpen.</p>
@@ -42,7 +42,7 @@ export default function BookingAndSteps() {
       </div>
 
       <div style={{ display: 'flex', alignItems: 'start' }}>
-        <img src='icons/circle_check.svg' />
+        <img className={styles.circleCheck} src='icons/circle_check.svg' />
         <div style={{ padding: '10px' }}>
           <p className={styles.subHeader}>3. Kies jouw lokale garage gebaseerd op jouw behoeften</p>
           <p className={styles.text}>Waar moeten we voor u een Bosch autogarage zoeken? Voer uw postcode in op de website zodat wij diensten in uw regio kunnen vinden. Selecteer de garage naar keuze.</p>
@@ -50,7 +50,7 @@ export default function BookingAndSteps() {
       </div>
 
       <div style={{ display: 'flex', alignItems: 'start' }}>
-        <img src='icons/circle_check.svg' />
+        <img className={styles.circleCheck} src='icons/circle_check.svg' />
         <div style={{ padding: '10px' }}>
           <p className={styles.subHeader}>4. Bevestig uw afspraak</p>
           <p className={styles.text}>Na een autogarage, tijd en datum gekozen te hebben voor uw afspraak hebben we alleen nog uw contactgegevens nodig. Tot snel in de garage.</p>
@@ -62,7 +62,7 @@ export default function BookingAndSteps() {
 
 
       {/* FAQ Section */}
-      <p className={styles.header} style={{ marginTop: '100px' }}>Veelgestelde vragen</p>
+      <p className={styles.header} style={{ marginTop: '80px' }}>Veelgestelde vragen</p>
 
       <p className={styles.textBold}>Geven jullie aangesloten garages voor de keuring een prijsindicatie?</p>
       <p className={styles.text}>Uw Auto by Bosch autogarage stemt voor een APK of reparaties altijd vooraf met u af wat de kosten zijn. Wanneer deze kosten toch hoger uitvallen dan gedacht, stellen wij u altijd op tijd op de hoogte. We kunnen niet per direct een prijsindicatie geven voor algemeen onderhoud.</p>

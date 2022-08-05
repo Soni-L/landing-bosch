@@ -26,22 +26,22 @@ export default function Home() {
       <div className={styles.valueContainer}>
         <div style={{ display: 'flex', alignItems: 'center' }}>
           <FontAwesomeIcon icon={faCheck} className={styles.check} />
-          <span style={{ fontFamily: 'BoschSansRegular', fontSize: '14px', color: '#2e3033' }}>Geen onverwachte kosten</span>
+          <span className={styles.text}>Geen onverwachte kosten</span>
         </div>
 
         <div style={{ display: 'flex', alignItems: 'center' }}>
           <FontAwesomeIcon icon={faCheck} className={styles.check} />
-          <span style={{ fontFamily: 'BoschSansRegular', fontSize: '14px', color: '#2e3033' }}>BOVAG-gecertificeerd</span>
+          <span className={styles.text}>BOVAG-gecertificeerd</span>
         </div>
 
         <div style={{ display: 'flex', alignItems: 'center' }}>
           <FontAwesomeIcon icon={faCheck} className={styles.check} />
-          <span style={{ fontFamily: 'BoschSansRegular', fontSize: '14px', color: '#2e3033' }}>Gegarandeerde kwaliteit van Bosch</span>
+          <span className={styles.text}>Gegarandeerde kwaliteit van Bosch</span>
         </div>
 
         <div style={{ display: 'flex', alignItems: 'center' }}>
           <FontAwesomeIcon icon={faCheck} className={styles.check} />
-          <span style={{ fontFamily: 'BoschSansRegular', fontSize: '14px', color: '#2e3033' }}>
+          <span className={styles.text}>
             Met behoud van fabrieksgarantie</span>
         </div>
       </div>

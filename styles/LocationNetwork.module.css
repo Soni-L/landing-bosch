@@ -18,7 +18,7 @@
 
 .header {
     font-family: BoschSansBold;
-    font-size: 42px;
+    font-size: var(--header-font-size-desktop);
     font-weight: 900;
     font-stretch: normal;
     font-style: normal;
@@ -29,7 +29,7 @@
 
 .header2 {
     font-family: BoschSansBold;
-    font-size: 28px;
+    font-size: var(--sub-header-font-size-desktop);
     font-weight: 900;
     font-stretch: normal;
     font-style: normal;
@@ -40,7 +40,7 @@
 
 .text {
     font-family: BoschSansRegular;
-    font-size: 16px;
+    font-size: var(--text-font-size-desktop);
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -51,7 +51,7 @@
 
 .link {
     font-family: BoschSansRegular;
-    font-size: 16px;
+    font-size: var(--text-font-size-desktop);
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -68,9 +68,26 @@
 }
 
 @media screen and (max-width: 900px) {
+    .header {
+        font-size: var(--header-font-size-mobile);
+    }
+
+    .header2 {
+        font-size: var(--sub-header-font-size-mobile);
+    }
+
+    .text {
+        font-size: var(--text-font-size-mobile);
+    }
+
+    .link {
+        font-size: var(--text-font-size-mobile);
+    }
+
     .mapSection {
         grid-template-columns: repeat(1, 1fr);
     }
+
     .headings {
         grid-template-columns: repeat(1, 1fr);
     }

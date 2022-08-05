@@ -16,7 +16,7 @@
 
 .header {
     font-family: BoschSansBold;
-    font-size: 42px;
+    font-size: var(--header-font-size-desktop);
     font-weight: 900;
     font-stretch: normal;
     font-style: normal;
@@ -27,7 +27,7 @@
 
 .header2 {
     font-family: BoschSansBold;
-    font-size: 28px;
+    font-size: var(--sub-header-font-size-desktop);
     font-weight: 900;
     font-stretch: normal;
     font-style: normal;
@@ -38,7 +38,7 @@
 
 .subHeader {
     font-family: BoschSansBold;
-    font-size: 21px;
+    font-size: var(--sub-header2-font-size-desktop);
     font-weight: 900;
     font-stretch: normal;
     font-style: normal;
@@ -50,7 +50,7 @@
 
 .text {
     font-family: BoschSansRegular;
-    font-size: 16px;
+    font-size: var(--text-font-size-desktop);
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -61,7 +61,7 @@
 
 .textBold {
     font-family: BoschSansBold;
-    font-size: 16px;
+    font-size: var(--text-font-size-desktop);
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -72,7 +72,7 @@
 
 .link {
     font-family: BoschSansRegular;
-    font-size: 16px;
+    font-size: var(--text-font-size-desktop);
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -93,7 +93,7 @@
 
 .buttonText {
     font-family: BoschSansBold;
-    font-size: 16px;
+    font-size: var(--text-font-size-desktop);
     font-weight: 900;
     font-stretch: normal;
     font-style: normal;
@@ -111,8 +111,43 @@
 }
 
 @media screen and (max-width: 900px) {
+    .header {
+        font-size: var(--header-font-size-mobile);
+    }
+
+    .header2 {
+        font-size: var(--sub-header-font-size-mobile);
+    }
+
+    .subHeader {
+        font-size: var(--sub-header2-font-size-mobile);
+    }
+
+    .text {
+        font-size: var(--text-font-size-mobile);
+        margin: 0;
+    }
+
+    .textBold {
+        font-size: var(--text-font-size-mobile);
+    }
+
+    .link {
+        font-size: var(--text-font-size-mobile);
+    }
+
+    .buttonText {
+        font-size: var(--text-font-size-mobile);
+    }
+
+
     .image {
         height: 400px;
+    }
+
+    .circleCheck {
+        height: 35px;
+        width: 35px;
     }
 
     .certificationContainer {

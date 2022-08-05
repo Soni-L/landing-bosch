@@ -19,8 +19,23 @@ body {
 
 :root {
   --maximum-content-width: 1200px;
-  --header-font-size-desktop : 51px;
-  --header-font-size-mobile : 32px;
+  --main-header-font-size-desktop : 51px;
+  --main-header-font-size-mobile : 27px;
+
+  --header-font-size-desktop : 42px;
+  --header-font-size-mobile : 22px;
+
+  --sub-header-font-size-desktop : 28px;
+  --sub-header-font-size-mobile : 20px;
+
+  --sub-header2-font-size-desktop : 21px;
+  --sub-header2-font-size-mobile : 18px;
+
+  --text-font-size-desktop : 16px;
+  --text-font-size-mobile : 14px;
+
+  --secondary-text-font-size-desktop : 14px;
+  --secondary-text-font-size-mobile : 12px;
 }
 
 a {
