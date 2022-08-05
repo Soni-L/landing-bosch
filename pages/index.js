@@ -14,10 +14,11 @@ export default function Home() {
   return (
     <div className={styles.pageContainer}>
       <Head>
+        <meta name="facebook-domain-verification" content="c8qzg7lsn9eng3e5rpgv3cdmyhfvs6" />
         <meta name="description" content="Car service booking by Bosch" />
         <meta name="keywords"
           content="auto, vervangen, accu, airco, beurt, banden, leeg, versnellingsbak, apk, branden, grote, kapot, kleine, motorblok, garage, geluid, niet, start, autolampjes, band, condensor, controleren, dashboard, kapotte, keuring, lampjes, lege, loopt, motor, nakijken, onderhoud, piepen, problemen, remmen, repareren, snel, uitlijnen, wisselen, autobedrijf, autogarage, motorproblemen" />
-        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.ico" />
         <title>Auto</title>
       </Head>
       {/* Bosch Horizontal rainbow header */}
