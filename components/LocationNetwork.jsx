@@ -12,7 +12,7 @@ export default function LocationNetwork() {
                 <div style={{ height: '400px', backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundImage: 'url(bosch_map.png)' }} />
             </div>
 
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1rem' }}>
+            <div className={styles.headings}>
                 <div>
                     <p className={styles.header2}>410 garages</p>
                     <p className={styles.text}>In Nederland hebben wij meer dan 410 Auto by Bosch autogarages. Er is er dus altijd wel eentje bij u in de regio te vinden. Bekijk op onze website met uw postcode welke garage het dichts bij zit.</p>

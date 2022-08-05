@@ -10,6 +10,12 @@
     margin-bottom: 50px;
 }
 
+.headings {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
 .header {
     font-family: BoschSansBold;
     font-size: 42px;
@@ -52,4 +58,20 @@
     line-height: 1.5;
     letter-spacing: normal;
     color: #ed0006;
+}
+
+@media screen and (max-width: 1270px) {
+    .container {
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .mapSection {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .headings {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
