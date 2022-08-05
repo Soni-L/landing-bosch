@@ -83,6 +83,7 @@
 @media screen and (max-width: 900px) {
     .headerMain {
         font-size: var(--main-header-font-size-mobile);
+        margin-bottom: 0;
     }
 
     .header {
