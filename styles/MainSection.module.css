@@ -63,9 +63,18 @@
 .button {
     width: 238px;
     height: 56px;
+    cursor: pointer;
     border: #ed0006;
     margin: 32px auto;
     background-color: #ed0006;
+}
+
+.button:hover {
+    background-color: rgba(225, 0, 5, 1);
+}
+
+.button:active {
+    background: rgba(213, 0, 3, 1);
 }
 
 .buttonText {

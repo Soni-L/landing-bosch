@@ -29,6 +29,15 @@
     border: hwb(358 0% 7%);
     display: block;
     background-color: #ed0006;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: rgba(225, 0, 5, 1);
+}
+
+.button:active {
+    background: rgba(213, 0, 3, 1);
 }
 
 .buttonText {
