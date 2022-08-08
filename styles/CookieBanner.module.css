@@ -6,6 +6,7 @@
     background-color: white;
     width: 100%;
     border-top: 1px solid gray;
+    animation: bannerFade 1000ms;
 }
 
 .horizontalLayout {
@@ -102,5 +103,15 @@
 
     .link {
         font-size: var(--text-font-size-mobile);
+    }
+}
+
+@keyframes bannerFade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
     }
 }
