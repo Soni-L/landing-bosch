@@ -4,6 +4,8 @@
 }
 
 .boschHeader {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
   height: 15px;
   width: 100vw;
