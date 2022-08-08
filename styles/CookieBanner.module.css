@@ -55,6 +55,14 @@
     background-color: #ed0006;
 }
 
+.button:hover {
+    background-color: rgba(225, 0, 5, 1);
+}
+
+.button:active {
+    background: rgba(213, 0, 3, 1);
+}
+
 .buttonText {
     font-family: BoschSansBold;
     font-size: var(--text-font-size-desktop);
