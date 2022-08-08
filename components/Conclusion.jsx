@@ -24,7 +24,7 @@ export default function Conclusion() {
 
                     <button className={styles.button}><span className={styles.buttonText}>Kies een dienst die bij u past</span></button>
                 </div>
-                <div className={styles.image} style={{ backgroundImage: 'url(happy_driver.png)' }} />
+                <div className={styles.image} style={{ backgroundImage: 'url(happy_driver.webp)' }} />
 
             </div>
         </div>
