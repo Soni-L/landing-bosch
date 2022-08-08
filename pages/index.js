@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { useState, useEffect } from 'react'
 import PageNavigation from '../components/PageNavigation';
 import Footer from '../components/Footer';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -8,9 +9,18 @@ import MainSection from '../components/MainSection';
 import BookingAndSteps from '../components/BookingAndSteps';
 import LocationNetwork from '../components/LocationNetwork';
 import Conclusion from '../components/Conclusion';
+import CookieBanner from '../components/CookieBanner';
 
 
 export default function Home() {
+  const [bannerExit, setBannerExit] = useState(false);
+  const [privacyAgreement, setPrivacyAgreement] = useState(false);
+
+  useEffect(() => {
+    if (localStorage.getItem('PrivacyAgreement'))
+      setPrivacyAgreement(true)
+  }, [])
+
   return (
     <div className={styles.pageContainer}>
       <Head>
@@ -64,6 +74,14 @@ export default function Home() {
       <Conclusion />
 
       <Footer />
+
+      {(privacyAgreement === true ? false : !bannerExit) && <CookieBanner onExit={() => setBannerExit(true)}
+        onAgree={
+          () => {
+            localStorage.setItem('PrivacyAgreement', true);
+            setPrivacyAgreement(true);
+          }
+        } />}
     </div>
   )
 }

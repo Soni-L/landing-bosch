@@ -1,0 +1,98 @@
+.container {
+    min-height: 100px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+    width: 100%;
+    border-top: 1px solid gray;
+}
+
+.horizontalLayout {
+    position: relative;
+    display: flex;
+    max-width: 1200px;
+    padding: 15px 0;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.exitButton {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+}
+
+.text {
+    font-family: BoschSansRegular;
+    font-size: var(--text-font-size-desktop);
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #2e3033;
+}
+
+.link {
+    font-family: BoschSansRegular;
+    font-size: var(--text-font-size-desktop);
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-decoration: underline;
+}
+
+.button {
+    width: 238px;
+    height: 56px;
+    border: hwb(358 0% 7%);
+    display: block;
+    margin: 32px 32px;
+    cursor: pointer;
+    background-color: #ed0006;
+}
+
+.buttonText {
+    font-family: BoschSansBold;
+    font-size: var(--text-font-size-desktop);
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+}
+
+@media screen and (max-width: 1270px) {
+    .horizontalLayout {
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    .horizontalLayout {
+        flex-direction: column;
+        padding-top: 35px;
+    }
+
+    .exitButton {
+        position: absolute;
+        top: 8px;
+        right: -5px;
+    }
+
+    .text {
+        font-size: var(--text-font-size-mobile);
+        margin: 0;
+    }
+
+    .link {
+        font-size: var(--text-font-size-mobile);
+    }
+}
