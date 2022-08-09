@@ -1,6 +1,14 @@
 import styles from '../styles/BookingAndSteps.module.css'
 
 export default function BookingAndSteps() {
+
+  const handleClick = (e) => {
+    e.preventDefault()
+    window.location.replace(localStorage.getItem('PrivacyAgreement') ?
+        `${process.env.NEXT_PUBLIC_BOSCHAUTO_NL_URL}/booking?PrivacyAgreement=true`
+        : `${process.env.NEXT_PUBLIC_BOSCHAUTO_NL_URL}/booking`);
+}
+
   return (
     <div className={styles.container}>
 
@@ -58,7 +66,7 @@ export default function BookingAndSteps() {
       </div>
       <p className={styles.header2}>... en je kan weer veilig en vertrouwd op weg</p>
 
-      <button className={styles.button}><span className={styles.buttonText}>Plan direct je afspraak</span></button>
+      <button onClick={handleClick} className={styles.button}><span className={styles.buttonText}>Plan direct je afspraak</span></button>
 
 
       {/* FAQ Section */}

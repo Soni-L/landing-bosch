@@ -3,6 +3,14 @@ import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import styles from '../styles/Conclusion.module.css'
 
 export default function Conclusion() {
+
+    const handleClick = (e) => {
+        e.preventDefault()
+        window.location.replace(localStorage.getItem('PrivacyAgreement') ?
+            `${process.env.NEXT_PUBLIC_BOSCHAUTO_NL_URL}/booking?PrivacyAgreement=true`
+            : `${process.env.NEXT_PUBLIC_BOSCHAUTO_NL_URL}/booking`);
+    }
+
     return (
         <div className={styles.backgroundContainer}>
             <div className={styles.container}>
@@ -22,7 +30,7 @@ export default function Conclusion() {
                         <span style={{ fontFamily: 'BoschSansRegular', fontSize: '14px', color: 'white' }}>Er is altijd een Auto by Bosch autobedrijf bij u in de buurt</span>
                     </div>
 
-                    <button className={styles.button}><span className={styles.buttonText}>Kies een dienst die bij u past</span></button>
+                    <button onClick={handleClick} className={styles.button}><span className={styles.buttonText}>Kies een dienst die bij u past</span></button>
                 </div>
                 <div className={styles.image} style={{ backgroundImage: 'url(happy_driver.webp)' }} />
 

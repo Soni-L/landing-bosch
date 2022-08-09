@@ -21,15 +21,15 @@ export default function MainSection() {
         }
 
         if (queryObject?.service === 'apk' && queryObject?.location) {
-            return `Boek uw volgende APK bij u in ${queryObject?.location} in slechts een paar klikken!`
+            return `Boek uw volgende APK bij u in ${decodeURIComponent(queryObject?.location)} in slechts een paar klikken!`
         }
 
         if (queryObject?.service === 'garage' && queryObject?.location) {
-            return `Vind snel & eenvoudig een garage bij u in ${queryObject?.location}!`
+            return `Vind snel & eenvoudig een garage bij u in ${decodeURIComponent(queryObject?.location)}!`
         }
 
         if (queryObject?.service === 'motor' && queryObject?.location) {
-            return `Problemen met uw auto? Plan direct een afspraak bij u in ${queryObject?.location}!`
+            return `Problemen met uw auto? Plan direct een afspraak bij u in ${decodeURIComponent(queryObject?.location)}!`
         }
 
         else {
@@ -39,14 +39,16 @@ export default function MainSection() {
 
     const handleClick = (e) => {
         e.preventDefault()
-        window.location.replace(process.env.NEXT_PUBLIC_BOSCHAUTO_NL_URL);
+        window.location.replace(localStorage.getItem('PrivacyAgreement') ?
+            `${process.env.NEXT_PUBLIC_BOSCHAUTO_NL_URL}/booking?PrivacyAgreement=true`
+            : `${process.env.NEXT_PUBLIC_BOSCHAUTO_NL_URL}/booking`);
     }
 
     return (
         <div className={styles.container}>
             <p className={styles.headerMain}>{generateHeader(router)}</p>
             <p className={styles.subHeader}>Voor uw eigen veiligheid en het welzijn van het milieu is het belangrijk om uw auto periodiek te laten controleren. Tijdens deze keuring controleert een professionele monteur uw auto zorgvuldig. Zo is uw auto weer klaar om de weg op te gaan.</p>
-            <button className={styles.button} onClick={handleClick}><span className={styles.buttonText}>Plan direct je afspraak</span></button>
+            <button onClick={handleClick} className={styles.button} ><span className={styles.buttonText}>Plan direct je afspraak</span></button>
 
             <div className={styles.image}
                 style={{
