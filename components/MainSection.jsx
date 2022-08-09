@@ -1,6 +1,41 @@
 import styles from '../styles/MainSection.module.css'
+import { useRouter } from 'next/router'
 
 export default function MainSection() {
+    const router = useRouter()
+
+
+    const generateHeader = (router) => {
+        const queryObject = router.query;
+
+        if (queryObject?.service === 'apk' && !queryObject?.location) {
+            return `Boek uw volgende APK bij u in de buurt in slechts een paar klikken!`
+        }
+
+        if (queryObject?.service === 'garage' && !queryObject?.location) {
+            return `Vind snel & eenvoudig een garage bij u in de buurt!`
+        }
+
+        if (queryObject?.service === 'motor' && !queryObject?.location) {
+            return `Problemen met uw auto? Plan direct een afspraak bij u in de buurt!`
+        }
+
+        if (queryObject?.service === 'apk' && queryObject?.location) {
+            return `Boek uw volgende APK bij u in ${queryObject?.location} in slechts een paar klikken!`
+        }
+
+        if (queryObject?.service === 'garage' && queryObject?.location) {
+            return `Vind snel & eenvoudig een garage bij u in ${queryObject?.location}!`
+        }
+
+        if (queryObject?.service === 'motor' && queryObject?.location) {
+            return `Problemen met uw auto? Plan direct een afspraak bij u in ${queryObject?.location}!`
+        }
+
+        else {
+            return 'Problemen met uw auto? Plan direct een afspraak bij u in de buurt!'
+        }
+    }
 
     const handleClick = (e) => {
         e.preventDefault()
@@ -9,7 +44,7 @@ export default function MainSection() {
 
     return (
         <div className={styles.container}>
-            <p className={styles.headerMain}>Boek uw volgende APK bij u in de buurt in slechts een paar klikken!</p>
+            <p className={styles.headerMain}>{generateHeader(router)}</p>
             <p className={styles.subHeader}>Voor uw eigen veiligheid en het welzijn van het milieu is het belangrijk om uw auto periodiek te laten controleren. Tijdens deze keuring controleert een professionele monteur uw auto zorgvuldig. Zo is uw auto weer klaar om de weg op te gaan.</p>
             <button className={styles.button} onClick={handleClick}><span className={styles.buttonText}>Plan direct je afspraak</span></button>
 
