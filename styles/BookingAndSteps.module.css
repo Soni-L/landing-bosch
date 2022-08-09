@@ -85,7 +85,7 @@
 .button {
     width: 238px;
     height: 56px;
-    border: hwb(358 0% 7%);
+    border: #ed0006;
     display: block;
     margin: 32px auto;
     background-color: #ed0006;
