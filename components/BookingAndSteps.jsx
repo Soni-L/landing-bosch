@@ -16,7 +16,7 @@ export default function BookingAndSteps() {
         <div className={styles.image} style={{
           backgroundSize: 'contain',
           backgroundRepeat: 'no-repeat',
-          backgroundImage: 'url(handing_keys.png)'
+          backgroundImage: 'url(handing_keys.webp)'
         }} />
         <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-around', alignItems: 'start' }}>
           <p className={styles.header}>Bij ons vind je alles voor jouw auto onder één dak</p>
