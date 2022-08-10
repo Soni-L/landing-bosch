@@ -8,27 +8,31 @@ export default function MainSection() {
     const generateHeader = (router) => {
         const queryObject = router.query;
 
-        if (queryObject?.service === 'apk' && !queryObject?.location) {
+        if (queryObject?.location && !queryObject?.service) {
+            return `Problemen met uw auto? Plan direct een afspraak bij u in ${decodeURIComponent(queryObject?.location)}!`
+        }
+
+        if (queryObject?.service?.toLowerCase() === 'apk' && !queryObject?.location) {
             return `Boek uw volgende APK bij u in de buurt in slechts een paar klikken!`
         }
 
-        if (queryObject?.service === 'garage' && !queryObject?.location) {
+        if (queryObject?.service?.toLowerCase() === 'garage' && !queryObject?.location) {
             return `Vind snel & eenvoudig een garage bij u in de buurt!`
         }
 
-        if (queryObject?.service === 'motor' && !queryObject?.location) {
+        if (queryObject?.service?.toLowerCase() === 'motor' && !queryObject?.location) {
             return `Problemen met uw auto? Plan direct een afspraak bij u in de buurt!`
         }
 
-        if (queryObject?.service === 'apk' && queryObject?.location) {
+        if (queryObject?.service?.toLowerCase() === 'apk' && queryObject?.location) {
             return `Boek uw volgende APK bij u in ${decodeURIComponent(queryObject?.location)} in slechts een paar klikken!`
         }
 
-        if (queryObject?.service === 'garage' && queryObject?.location) {
+        if (queryObject?.service?.toLowerCase() === 'garage' && queryObject?.location) {
             return `Vind snel & eenvoudig een garage bij u in ${decodeURIComponent(queryObject?.location)}!`
         }
 
-        if (queryObject?.service === 'motor' && queryObject?.location) {
+        if (queryObject?.service?.toLowerCase() === 'motor' && queryObject?.location) {
             return `Problemen met uw auto? Plan direct een afspraak bij u in ${decodeURIComponent(queryObject?.location)}!`
         }
 
