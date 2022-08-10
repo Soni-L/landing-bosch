@@ -60,7 +60,7 @@ export default function MainSection() {
                     margin: '0 auto',
                     backgroundSize: 'contain',
                     backgroundRepeat: 'no-repeat',
-                    backgroundImage: 'url(blue_car.png)'
+                    backgroundImage: 'url(blue_car.webp)'
                 }}>
             </div>
 
