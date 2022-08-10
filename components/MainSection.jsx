@@ -43,7 +43,7 @@ export default function MainSection() {
 
     const handleClick = (e) => {
         e.preventDefault()
-        window.location.replace(localStorage.getItem('PrivacyAgreement') ?
+        window.location.assign(localStorage.getItem('PrivacyAgreement') ?
             `${process.env.NEXT_PUBLIC_BOSCHAUTO_NL_URL}/booking?PrivacyAgreement=true`
             : `${process.env.NEXT_PUBLIC_BOSCHAUTO_NL_URL}/booking`);
     }
