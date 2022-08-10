@@ -60,6 +60,12 @@
     color: #ed0006;
 }
 
+.image {
+    height: 400px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 @media screen and (max-width: 1270px) {
     .container {
         margin-left: 35px;
@@ -90,5 +96,15 @@
 
     .headings {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .image {
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .image {
+        display: none;
     }
 }

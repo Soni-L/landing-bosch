@@ -9,7 +9,7 @@ export default function LocationNetwork() {
                     <p className={styles.text}>Bij Auto by Bosch doen we alles voor uw auto. Wij bieden deskundig advies met vakkundig onderhoud en reparatiewerk. Wij zijn een netwerk van onafhankelijke garages voor <a href='https://boschauto.nl/' className={styles.link}>APK</a>, <a href='https://boschauto.nl/' className={styles.link}>algemeen onderhoud</a> en <a href='https://boschauto.nl/' className={styles.link}>reparatie</a>.</p>
                     <p className={styles.text} style={{ margin: 0 }}>Wij bieden betaalbare kwaliteit waarop u kunt vertrouwen. Met meer dan 410 garages door heel Nederland verzekeren wij u altijd van service bij u in de regio.</p>
                 </div>
-                <div style={{ height: '400px', backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundImage: 'url(bosch_map.png)' }} />
+                <div className={styles.image} style={{ backgroundImage: 'url(bosch_map.png)' }} />
             </div>
 
             <div className={styles.headings}>
