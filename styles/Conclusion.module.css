@@ -98,6 +98,10 @@
 }
 
 @media screen and (max-width: 600px) {
+    .container {
+        gap: 1.5rem;
+    }
+
     .image {
         height: 280px;
         background-size: contain;

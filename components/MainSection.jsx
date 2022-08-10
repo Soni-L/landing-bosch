@@ -77,39 +77,39 @@ export default function MainSection() {
                 }}>
 
                     <div style={{ display: 'flex', alignItems: 'center' }}>
-                        <img src='icons/clock_icon.svg' />
+                        <img className={styles.icon} src='icons/clock_icon.svg' />
                         <span style={{ margin: '0 5px' }} />
                         <span className={styles.iconText}>Bespaar tijd met snelle, digitale boeking</span>
                     </div>
 
                     <div style={{ display: 'flex', alignItems: 'center' }}>
-                        <img src='icons/money_bag.svg' />
+                        <img className={styles.icon} src='icons/money_bag.svg' />
                         <span style={{ margin: '0 5px' }} />
                         <span className={styles.iconText}>Vooraf weten wat de kosten zijn (m.u.v de algemene onderhoud)</span>
                     </div>
 
                     <div style={{ display: 'flex', alignItems: 'center' }}>
-                        <img src='icons/headset.svg' />
+                        <img className={styles.icon} src='icons/headset.svg' />
                         <span style={{ margin: '0 5px' }} />
                         <span className={styles.iconText}>Krijg hulp van onze erkende specialisten</span>
                     </div>
 
 
                     <div style={{ display: 'flex', alignItems: 'center' }}>
-                        <img src='icons/location_pin.svg' />
+                        <img className={styles.icon} src='icons/location_pin.svg' />
                         <span style={{ margin: '0 5px' }} />
                         <span className={styles.iconText}>Met 410 locaties in Nederland, altijd een bij jou in de buurt!</span>
                     </div>
 
 
                     <div style={{ display: 'flex', alignItems: 'center' }}>
-                        <img src='icons/tools.svg' />
+                        <img className={styles.icon} src='icons/tools.svg' />
                         <span style={{ margin: '0 5px' }} />
                         <span className={styles.iconText}>Onze aangesloten autobedrijven zijn BOVAG-gecertificeerd</span>
                     </div>
 
                     <div style={{ display: 'flex', alignItems: 'center' }}>
-                        <img src='icons/double_check.svg' />
+                        <img className={styles.icon} src='icons/double_check.svg' />
                         <span style={{ margin: '0 5px' }} />
                         <span className={styles.iconText}>Wij bieden u de kwaliteit van Bosch producten</span>
                     </div>
