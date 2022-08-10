@@ -21,6 +21,11 @@ export default function Home() {
       setPrivacyAgreement(true)
   }, [])
 
+  useEffect(() => {
+    if (privacyAgreement === true)
+      localStorage.setItem('PrivacyAgreement', true);
+  }, [privacyAgreement])
+
   return (
     <div className={styles.pageContainer}>
       <Head>
@@ -76,12 +81,7 @@ export default function Home() {
       <Footer />
 
       {(privacyAgreement === true ? false : !bannerExit) && <CookieBanner onExit={() => setBannerExit(true)}
-        onAgree={
-          () => {
-            localStorage.setItem('PrivacyAgreement', true);
-            setPrivacyAgreement(true);
-          }
-        } />}
+        onAgree={() => setPrivacyAgreement(true)} />}
     </div>
   )
 }
