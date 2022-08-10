@@ -5,12 +5,12 @@ export default function BookingAndSteps() {
   const handleClick = (e) => {
     e.preventDefault()
     window.location.replace(localStorage.getItem('PrivacyAgreement') ?
-        `${process.env.NEXT_PUBLIC_BOSCHAUTO_NL_URL}/booking?PrivacyAgreement=true`
-        : `${process.env.NEXT_PUBLIC_BOSCHAUTO_NL_URL}/booking`);
-}
+      `${process.env.NEXT_PUBLIC_BOSCHAUTO_NL_URL}/booking?PrivacyAgreement=true`
+      : `${process.env.NEXT_PUBLIC_BOSCHAUTO_NL_URL}/booking`);
+  }
 
   return (
-    <div className={styles.container}>
+    <div id="wat-wij-doen" className={styles.container}>
 
       <div className={styles.certificationContainer}>
         <div className={styles.image} style={{
@@ -32,7 +32,7 @@ export default function BookingAndSteps() {
         </div>
       </div>
 
-      <p className={styles.header}>Van afspraak tot veilig op weg</p>
+      <p id='hoe-het-werkt' className={styles.header}>Van afspraak tot veilig op weg</p>
       <div style={{ display: 'flex', alignItems: 'start' }}>
         <img className={styles.circleCheck} src='icons/circle_check.svg' />
         <div style={{ padding: '10px' }}>
@@ -70,7 +70,7 @@ export default function BookingAndSteps() {
 
 
       {/* FAQ Section */}
-      <p className={styles.header} style={{ marginTop: '80px' }}>Veelgestelde vragen</p>
+      <p id='veelgestelde-vragen' className={styles.header} style={{ marginTop: '80px' }}>Veelgestelde vragen</p>
 
       <p className={styles.textBold}>Geven jullie aangesloten garages voor de keuring een prijsindicatie?</p>
       <p className={styles.text}>Uw Auto by Bosch autogarage stemt voor een APK of reparaties altijd vooraf met u af wat de kosten zijn. Wanneer deze kosten toch hoger uitvallen dan gedacht, stellen wij u altijd op tijd op de hoogte. We kunnen niet per direct een prijsindicatie geven voor algemeen onderhoud.</p>

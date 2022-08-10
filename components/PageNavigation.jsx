@@ -1,7 +1,10 @@
 import styles from '../styles/PageNavigation.module.css'
-import Link from 'next/link'
 
 export default function PageNavigation() {
+    const handleClick = (e, id) => {
+        e.preventDefault();
+        document.querySelector(id)?.scrollIntoView({ behavior: 'smooth' })
+    }
     return (
         <div className={styles.container}>
             <div
@@ -17,11 +20,11 @@ export default function PageNavigation() {
                 }} >
             </div>
 
-            <Link href='#'><a className={styles.link}>Waar je op kunt rekenen</a></Link>
-            <Link href='#'><a className={styles.link}>Wat wij doen</a></Link>
-            <Link href='#'><a className={styles.link}>Hoe het werkt</a></Link>
-            <Link href='#'><a className={styles.link}>Veelgestelde vragen</a></Link>
-            <Link href='#'><a className={styles.link}>Auto by Bosch</a></Link>
+            <a href='' onClick={(e) => handleClick(e, '#waar-je-op-kunt-rekenen')} className={styles.link}>Waar je op kunt rekenen</a>
+            <a href='' onClick={(e) => handleClick(e, '#wat-wij-doen')} className={styles.link}>Wat wij doen</a>
+            <a href='' onClick={(e) => handleClick(e, '#hoe-het-werkt')} className={styles.link}>Hoe het werkt</a>
+            <a href='' onClick={(e) => handleClick(e, '#veelgestelde-vragen')} className={styles.link}>Veelgestelde vragen</a>
+            <a href='' onClick={(e) => handleClick(e, '#auto-by-bosch')} className={styles.link}>Auto by Bosch</a>
         </div>
     )
 }

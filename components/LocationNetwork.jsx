@@ -3,7 +3,7 @@ import styles from '../styles/LocationNetwork.module.css'
 export default function LocationNetwork() {
     return (
         <div className={styles.container}>
-            <div className={styles.mapSection}>
+            <div id='auto-by-bosch' className={styles.mapSection}>
                 <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'start' }}>
                     <p className={styles.header} style={{ margin: 0 }}>Auto by Bosch</p>
                     <p className={styles.text}>Bij Auto by Bosch doen we alles voor uw auto. Wij bieden deskundig advies met vakkundig onderhoud en reparatiewerk. Wij zijn een netwerk van onafhankelijke garages voor <a href='https://boschauto.nl/' className={styles.link}>APK</a>, <a href='https://boschauto.nl/' className={styles.link}>algemeen onderhoud</a> en <a href='https://boschauto.nl/' className={styles.link}>reparatie</a>.</p>
