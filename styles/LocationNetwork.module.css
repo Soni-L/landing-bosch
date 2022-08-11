@@ -107,4 +107,8 @@
     .image {
         display: none;
     }
+
+    .mapSection {
+        margin-bottom: 1rem;
+    }
 }

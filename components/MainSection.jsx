@@ -52,7 +52,7 @@ export default function MainSection() {
         <>
             <div className={styles.container} style={{ marginBottom: '60px' }}>
                 <p className={styles.headerMain}>{generateHeader(router)}</p>
-                <p className={styles.subHeader}>Voor uw eigen veiligheid en het welzijn van het milieu is het belangrijk om uw auto periodiek te laten controleren. Tijdens deze keuring controleert een professionele monteur uw auto zorgvuldig. Zo is uw auto weer klaar om de weg op te gaan.</p>
+                <p className={`${styles.subHeader} ${styles.mobileDisplayNone}`}>Voor uw eigen veiligheid en het welzijn van het milieu is het belangrijk om uw auto periodiek te laten controleren. Tijdens deze keuring controleert een professionele monteur uw auto zorgvuldig. Zo is uw auto weer klaar om de weg op te gaan.</p>
                 <button onClick={handleClick} className={styles.button} ><span className={styles.buttonText}>Plan direct je afspraak</span></button>
             </div>
 

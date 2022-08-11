@@ -124,6 +124,10 @@
 }
 
 @media screen and (max-width: 600px) {
+    .mobileDisplayNone {
+        display: none;
+    }
+
     .icon {
         height: 45px;
         width: 45px;
