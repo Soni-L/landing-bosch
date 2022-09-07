@@ -30,6 +30,30 @@ export default function Home() {
     <div className={styles.pageContainer}>
       <Head>
         <meta name="facebook-domain-verification" content="c8qzg7lsn9eng3e5rpgv3cdmyhfvs6" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID}', {
+              page_path: window.location.pathname,
+            });
+          `,
+          }}
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${process.env.NEXT_PUBLIC_BOSCH_GOOGLE_TAG_MANAGER_ID}', {
+              page_path: window.location.pathname,
+            });
+          `,
+          }}
+        />
         <meta name="description" content="Car service booking by Bosch" />
         <meta name="keywords"
           content="auto, vervangen, accu, airco, beurt, banden, leeg, versnellingsbak, apk, branden, grote, kapot, kleine, motorblok, garage, geluid, niet, start, autolampjes, band, condensor, controleren, dashboard, kapotte, keuring, lampjes, lege, loopt, motor, nakijken, onderhoud, piepen, problemen, remmen, repareren, snel, uitlijnen, wisselen, autobedrijf, autogarage, motorproblemen" />
