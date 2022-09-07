@@ -1,10 +1,10 @@
-name: Build and Deploy to Netlify
+name: Prod Build and Deploy to Netlify
 on:
   push:
     branches:
-      - development
+      - master
 jobs:
-  deploy-dev:
+  deploy-prod:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -31,5 +31,5 @@ jobs:
           production-deploy: true
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID_DEV }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
         timeout-minutes: 10
